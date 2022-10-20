@@ -31,6 +31,8 @@ const getAnimal = async (animalId) => {
         })
         .catch(function (error) {
           console.log(error);
+          window.location.reload();
+          alert("Dados não encontrados");
         });
     }
     
@@ -61,6 +63,7 @@ const StatusEnvio = () => {
                 setNome(data['nome']);
                 setRaca(data["raca"]);
                 setTipoSang(data['tipo_sanguineo']);
+                setSexo(data['sexo']);
                 setDataNascAnimal(data["data_nascimento"]);
                 setCpf(data["tutor"]["cpf"]);
                 setNomeTutor(data["tutor"]["nome"]);
@@ -85,7 +88,7 @@ const StatusEnvio = () => {
                 <Typography variant="h5" gutterBottom>
                     Buscar envio
                 </Typography>
-                <TextField id="outlined-multiline-flexible" label="ID do pacote" multiline onChange={(e) => setIdPacote(e.target.value)}
+                <TextField id="outlined-multiline-flexible" label="ID do animal" multiline onChange={(e) => setIdPacote(e.target.value)}
                     className={classes.field} />
                 <Button size="large" variant="contained" margin="hard" onClick={handleSubmit}>
                     Buscar
@@ -166,8 +169,8 @@ const StatusEnvio = () => {
                     id="outlined"
                     label="Nome"
                     disabled
-                    value={nome}
-                />
+                    value={nomeTutor}
+                /> 
             </div>
             <Grid container direction="column" alignItems="center" justify="center">
                 <Button size="large" variant="contained" margin="hard">
