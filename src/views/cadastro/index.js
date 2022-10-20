@@ -234,7 +234,7 @@ export default function Cadastrar() {
                 <p></p>
                 <Grid container direction="column" alignItems="center">
                     <Button size="large" variant="contained" margin="dense" endIcon={<KeyboardArrowRight />} type="submit">
-                        Cadastrar Novo Envio
+                        Cadastrar
                     </Button>
                 </Grid>
             </form>

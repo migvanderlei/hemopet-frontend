@@ -42,7 +42,7 @@ const MainRoutes = {
             element: <CadastrarEnvio />
         },
         {
-            path: 'envios',
+            path: 'exames',
             element: <MeusEnvios />
         },
         {

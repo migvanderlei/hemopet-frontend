@@ -20,11 +20,11 @@ const Logo = () => {
         <div>
             <Grid container spacing={1} direction="row" justifyContent="center" alignItems="center">
                 <Grid item xs>
-                    <img src={logo} alt="Motion" width="40" />
+                    <img src={logo} alt="Hemopet" width="40" />
                 </Grid>
                 <Grid item xs>
                     <MuiTypography variant="h3" gutterBottom>
-                        Motion
+                        Hemopet
                     </MuiTypography>
                 </Grid>
             </Grid>

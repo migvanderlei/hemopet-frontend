@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import { useState } from 'react';
 import { makeStyles } from '@mui/styles';
 import { Grid } from '@mui/material';
-
+import axios from 'axios';
 // Para as margens
 
 const useStyles = makeStyles({
@@ -17,84 +17,55 @@ const useStyles = makeStyles({
 });
 
 
-// const listPackages = async () => {
-//     window.ethereum.request({ method: "eth_requestAccounts" });
-
-//     const web3 = new Web3(window.ethereum);
-//     const receiveAddress = await web3.eth.getAccounts();
-
-//     await myContract.methods
-//       .listMySentPackages()
-//       .call({ from: receiveAddress[0] })
-//       .then((result) => {
-//         console.log("result: ", result);
-//       })
-//       .catch((error) => {
-//         console.warn("Error: List packages", error);
-//       });
-//   };
-
-const getPackage = async (packageId) => {
-    window.ethereum.request({ method: "eth_requestAccounts" });
-
-    const web3 = new Web3(window.ethereum);
-
-    const sendAddress = await web3.eth.getAccounts();
-
-    return await myContract.methods
-        .getPackage(packageId)
-        .call({ from: sendAddress[0] })
-        .then((result) => {
-            console.log("Result: ", result);
-            return result;
+// Register new package
+const getAnimal = async (animalId) => {
+    //   const axiosInstance = axios.create({baseUrl: "https://hemopet-api.herokuapp.com"})
+    
+      const url = "https://hemopet-api.herokuapp.com/animal/" + animalId;
+    
+      return await axios
+        .get(url)
+        .then(function (response) {
+          console.log(response['data']);
+          return response['data'];
         })
-        .catch((error) => {
-            console.warn("Error: Package not found or without permission", error);
+        .catch(function (error) {
+          console.log(error);
         });
-};
+    }
+    
 
 const StatusEnvio = () => {
     const classes = useStyles();
 
     const [idPacote, setIdPacote] = useState('');
 
-    const [estado, setEstado] = useState('');
-    const [cidade, setCidade] = useState('');
-    const [bairro, setBairro] = useState('');
-    const [rua, setRua] = useState('');
-    const [numero, setNumero] = useState('');
-    const [complemento, setComplemento] = useState('');
-    const [hash, setHash] = useState('');
-    const [desc, setDesc] = useState('');
-    const [status, setStatus] = useState('');
-    const [novoStatus, setNovoStatus] = useState('');
+    const [id, setId] = useState('');
+    const [nome, setNome] = useState('');
+    const [raca, setRaca] = useState('');
+    const [sexo, setSexo] = useState('');
+    const [tipoSang, setTipoSang] = useState('');
+    const [dataNascAnimal, setDataNascAnimal] = useState('');
+    const [cpf, setCpf] = useState('');
+    const [nomeTutor, setNomeTutor] = useState('');
+    const [dataNascTutor, setDataNascTutor] = useState('');
 
-
+ 
     const handleSubmit = (e) => {
         e.preventDefault();
 
         if (idPacote) {
             console.log(idPacote);
-            getPackage(idPacote).then(data => {
-                setRua(data["deliveryAddress"]["name"]);
-                setBairro(data["deliveryAddress"]["district"]);
-                setNumero(data["deliveryAddress"]["number"]);
-                setCidade(data["deliveryAddress"]["city"]);
-                setEstado(data["deliveryAddress"]["state"]);
-                setComplemento(data["deliveryAddress"]["complement"]);
-                setHash(data["receiver"]);
-                setDesc(data["description"]);
-
-                const dataStatus = data["status"];
-
-                if (dataStatus == "0")
-                    setStatus("Em processamento");
-                if (dataStatus == "1")
-                    setStatus("Em transporte");
-                if (dataStatus == "2")
-                    setStatus("Entregue");
-                if (dataStatus == "3")
-                    setStatus("Cancelado");
+            getAnimal(idPacote).then(data => {
+                setId(data['id']);
+                setNome(data['nome']);
+                setRaca(data["raca"]);
+                setTipoSang(data['tipo_sanguineo']);
+                setDataNascAnimal(data["data_nascimento"]);
+                setCpf(data["tutor"]["cpf"]);
+                setNomeTutor(data["tutor"]["nome"]);
+                setDataNascTutor(data["tutor"]["data_nascimento"]);
+                
 
             }).catch(console.log("Não Encontrado!"))
 
@@ -122,44 +93,85 @@ const StatusEnvio = () => {
             </div>
             <div>
                 <br />
-                <Typography variant="h4" gutterBottom>
-                    Dados
-                </Typography>
                 <Typography variant="h5" gutterBottom>
-                    Endereço do Envio
+                    Dados do Animal
                 </Typography>
-            </div>
-            <div label="Pacote">
-                <TextField id="outlined-multiline-flexible" label="Estado do Brasil" multiline disabled value={estado}
-                    className={classes.field} />
-                <TextField id="outlined-textarea" label="Cidade" multiline disabled value={cidade}
-                    className={classes.field} />
-                <TextField id="outlined-textarea" label="Bairro ou Distrito" multiline disabled value={bairro}
-                    className={classes.field} />
-                <TextField id="outlined-textarea" label="Nome da Rua" multiline disabled value={rua}
-                    className={classes.field} />
-                <TextField id="outlined-textarea" label="Número" multiline disabled value={numero}
-                    className={classes.field} />
-                <TextField id="outlined-textarea" label="Complemento" multiline disabled value={complemento}
-                    className={classes.field} />
-            </div>
-            <p></p>
-            <div>
+                <TextField
+                    className={classes.field}
+                    id="outlined"
+                    label="ID do animal"
+                    disabled
+                    value={id}
+                />
+                <TextField
+                    className={classes.field}
+                    id="outlined-textarea"
+                    label="Nome"
+                    multiline
+                    disabled
+                    value={nome}
+                />
+                <TextField
+                    className={classes.field}
+                    id="outlined-textarea"
+                    label="Raça"
+                    multiline
+                    disabled
+                    value={raca}
+                />
+                <TextField
+                    className={classes.field}
+                    id="outlined-textarea"
+                    label="Sexo"
+                    multiline
+                    disabled
+                    value={sexo}
+                />
+                <TextField
+                    className={classes.field}
+                    id="outlined-textarea"
+                    label="Tipo Sanguíneo"
+                    multiline
+                    disabled
+                    value={tipoSang}
+                />
+                <TextField
+                    className={classes.field}
+                    id="outlined-textarea"
+                    label="Data de Nascimento"
+                    disabled
+                    value={dataNascAnimal}
+                />
+
                 <Typography variant="h5" gutterBottom>
-                    Dados do Pacote
+                    Dados do Tutor
                 </Typography>
-            </div>
-            <div label="Pacote">
-                <TextField id="outlined-multiline-flexible" label="Hash Destinatário" multiline value={hash} disabled
-                    className={classes.field} />
-                <TextField id="outlined-multiline-flexible" label="Descrição do Pacote" value={desc}
-                    className={classes.field} multiline disabled />
-                <TextField id="outlined-textarea" label="Status do envio" multiline disabled value={status}
-                    className={classes.field} />
+
+                <TextField
+                    className={classes.field}
+                    id="outlined"
+                    label="CPF"
+                    disabled
+                    value={cpf}
+                />
+                <TextField
+                    className={classes.field}
+                    id="outlined"
+                    label="Data de Nacimento"
+                    disabled
+                    value={dataNascTutor}
+                />
+                <TextField
+                    className={classes.field}
+                    id="outlined"
+                    label="Nome"
+                    disabled
+                    value={nome}
+                />
             </div>
             <Grid container direction="column" alignItems="center" justify="center">
                 <Button size="large" variant="contained" margin="hard">
-                    Atualizar Status
+                    Atualizar
                 </Button>
             </Grid>
         </Box>

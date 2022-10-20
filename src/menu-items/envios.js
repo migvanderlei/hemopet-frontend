@@ -24,7 +24,7 @@ const envios = {
         },
         {
             id: 'shipments',
-            title: 'Listar Envios',
+            title: 'Listar Animais',
             type: 'item',
             url: '/listagem',
             icon: icons.IconList,
