@@ -1,169 +1,118 @@
-# [Material Dashboard 2](http://demos.creative-tim.com/material-dashboard/pages/dashboard.html?ref=readme-md2) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://www.creative-tim.com/product/material-dashboard&text=Check%20Material%20Dashboard%202%20made%20by%20@CreativeTim%20#webdesign%20#dashboard%20#materialdesign%20#html%20https://www.creative-tim.com/product/material-dashboard) [![Discord](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.gg/FhCJCaHdQa)
+# Berry Free React Material UI Admin Template [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Get%20Berry%20React%20-%20The%20most%20beautiful%20Material%20designed%20Admin%20Dashboard%20Template%20&url=https://berrydashboard.io&via=codedthemes&hashtags=reactjs,webdev,developers,javascript)
 
-![version](https://img.shields.io/badge/version-3.0.5-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-dashboard.svg)](https://github.com/creativetimofficial/material-dashboard/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-dashboard.svg)](https://github.com/creativetimofficial/material-dashboard/issues?q=is%3Aissue+is%3Aclosed)
-
-![Image](https://s3.amazonaws.com/creativetim_bucket/products/50/original/material-dashboard.jpg?1634648873)
-
-[Material Dashboard](https://www.creative-tim.com/product/material-dashboard) is a free Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design. We are very excited to introduce our take on the material concepts through an easy to use and beautiful set of components. Material Dashboard was built over the popular Bootstrap framework and it comes with a couple of third-party plugins redesigned to fit in with the rest of the elements.
-
-Material Dashboard makes use of light, surface and movement. The general layout resembles sheets of paper following multiple different layers, so that the depth and order is obvious. The navigation stays mainly on the left sidebar and the content is on the right inside the main panel.
-
-This product came as a result of users asking for a material dashboard after we released our successful [Material Kit](https://www.creative-tim.com/product/material-kit). We developed it based on your feedback and it is a powerful bootstrap admin dashboard, which allows you to build products like admin panels, content managements systems and CRMs.
-
-Material Dashboard comes with 5 color filter choices for both the sidebar and the card headers (blue, green, orange, red and purple) and an option to have a background image on the sidebar.
-
-Special thanks go to:
-- [Robert McIntosh](https://github.com/mouse0270/bootstrap-notify) for the notification system.
-- [Chartist](https://gionkunz.github.io/chartist-js/) for the wonderful charts.
-We are very excited to share this dashboard with you and we look forward to hearing your feedback!
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://github.com/codedthemes/berry-free-react-admin-template/blob/main/LICENSE)
+[![GitHub package version](https://img.shields.io/github/package-json/v/codedthemes/berry-free-react-admin-template)](https://github.com/codedthemes/berry-free-react-admin-template/)
 
 
-## Table of Contents
+Berry is a free Material UI admin dashboard template built with React. It is meant to provide the best possible User Experience with highly customizable feature-rich pages. It is a complete Dashboard Template that has easy and intuitive responsive design whether it is viewed on retina screens or laptops.
 
-- [Material Dashboard 2 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://www.creative-tim.com/product/material-dashboard&text=Check%20Material%20Dashboard%202%20made%20by%20@CreativeTim%20#webdesign%20#dashboard%20#materialdesign%20#html%20https://www.creative-tim.com/product/material-dashboard) [![Discord](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.gg/FhCJCaHdQa)](#material-dashboard-2--)
-  - [Table of Contents](#table-of-contents)
-  - [Versions](#versions)
-  - [Demo](#demo)
-  - [Quick start](#quick-start)
-  - [Documentation](#documentation)
-  - [File Structure](#file-structure)
-  - [Browser Support](#browser-support)
-  - [Resources](#resources)
-  - [Reporting Issues](#reporting-issues)
-  - [Upgrade to Premium version](#upgrade-to-premium-version)
-  - [Technical Support or Questions](#technical-support-or-questions)
-  - [Licensing](#licensing)
-  - [Useful Links](#useful-links)
-        - [Social Media](#social-media)
+:star: :star: :star: Do not forget to star (Top right of this page) it if you like the theme  :star: :star: :star:
+
+![IMG_8566.jpg](https://berrydashboard.io/imp-images/berry-github-free-repo-1.jpg)
 
 
+[Pro version](https://berrydashboard.io) of Berry react template contains features like TypeScript, Next.js Seed versions, Apps, Authentication Methods (i.e. JWT, Auth0, Firebase), Advance Components, Form Plugins, Layouts, Widgets, and many more.
 
-## Versions
-
-[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-react)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/vue-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/vue-material-dashboard)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/angular-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-angular2)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react-native-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-kit-react-native)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/laravel-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-laravel)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/vuetify-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/vuetify-material-dashboard)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/django-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-django)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/nextjs-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/nextjs-material-dashboard)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/flask-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-flask)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/aspnet-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-react-asp-net)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/nodejs-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-react-nodejs)
-
-
-| HTML 5 | HTML 4 | Dark HTML| React | Vue | Angular  |
-| --- | --- | --- | --- | --- | ---  |
-| [![Material Dashboard  HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/thumb/material-dashboard.jpg)](https://www.creative-tim.com/product/material-dashboard)  | [![Material Dashboard  HTML](https://github.com/creativetimofficial/public-assets/raw/master/material-dashboard-html/material-dashboard.jpeg?raw=true)](https://www.creative-tim.com/product/material-dashboard-bs4)  | [![Material Dashboard Dark Edition](https://s3.amazonaws.com/creativetim_bucket/products/95/thumb/opt_mdb_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-dark) | [![Material Dashboard  React](https://s3.amazonaws.com/creativetim_bucket/products/71/thumb/opt_mdr_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-react)  | [![Vue Material Dashboard](https://s3.amazonaws.com/creativetim_bucket/products/81/thumb/opt_md_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard)  | [![Material Dashboard  Angular](https://s3.amazonaws.com/creativetim_bucket/products/53/thumb/opt_md_angular_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-angular2)
-
-| Vuetify | React Native | Nextjs | Nodejs |
-| --- | --- | --- | ---  |
-| [![Material Dashboard  Vuetify](https://s3.amazonaws.com/creativetim_bucket/products/100/original/opt_md_vuetify_thumbnail.jpg)](https://www.creative-tim.com/product/vuetify-material-dashboard)  | [![React Native](https://s3.amazonaws.com/creativetim_bucket/products/144/original/opt_mkrn_thumbnail.jpg)](https://www.creative-tim.com/product/material-kit-react-native)  | [![Nextjs Material Dashboard](https://s3.amazonaws.com/creativetim_bucket/products/341/original/opt_md_nextjs_thumbnail.jpg)](https://www.creative-tim.com/product/nextjs-material-dashboard)  | [![Material Dashboard React Nodejs](https://s3.amazonaws.com/creativetim_bucket/products/157/original/opt_md_react_node_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-react-nodejs)
-
-| Laravel | Asp.NET | Django | Flask |
-| --- | --- | --- | ---  |
-| [![Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-laravel) | [![Asp.NET](https://s3.amazonaws.com/creativetim_bucket/products/397/original/opt_md_aspnet_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-react-asp-net)  | [![Material Dashboard Django](https://s3.amazonaws.com/creativetim_bucket/products/337/original/opt_md_django_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-django)  | [![Material Dashboard Flask](https://s3.amazonaws.com/creativetim_bucket/products/338/original/opt_md_flask_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-flask)
+| [Berry Free](https://berrydashboard.io/free/)    | [Berry](https://material-ui.com/store/items/berry-react-material-admin/) |
+| ---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------|
+| **9** Demo pages                                                                         | **45+** demo pages                                                       |
+| -                                                                                        | ✓ Multi-language                                                         |
+| -                                                                                        | ✓ Dark/Light Mode 🌓                                                    |
+| -                                                                                        | ✓ TypeScript version                                                     |
+| -                                                                                        | ✓ Design files (Figma)                                                   |
+| -                                                                                        | ✓ 6+ color Options                                                       |
+| -                                                                                        | ✓ RTL                                                                    |
+| -                                                                                        | ✓ JWT, Firebase, Auth0 authentications                                   |
+| -                                                                                        | ✓ [More components](https://berrydashboard.io/dashboard/default)         |  
 
 
-## Demo
+## Why Berry?
 
-- [Start page](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html)
-- [User profile page](https://demos.creative-tim.com/material-dashboard/examples/user.html)
-- [Tables page ](https://demos.creative-tim.com/material-dashboard/examples/tables.html)
-- [Maps Page](https://demos.creative-tim.com/material-dashboard/examples/map.html)
-- [Notifications page](https://demos.creative-tim.com/material-dashboard/examples/notifications.html)
+Berry offers everything you need to create dashboards. We have included the following high-end features in our initial release:
 
-[View More](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html).
+ * Modern aesthetics UI design
+ * Material-UI components
+ * Fully Responsive, all modern browser supported
+ * Easy to use code structure
+ * Flexible & High-Performance code
+ * Easy Documentation Guide
 
+## Free Berry React version
 
-## Quick start
+ - [Preview](https://berrydashboard.io/free/)
+ - [Download from Github](https://github.com/codedthemes/berry-free-react-admin-template)
+ 
+## Berry Pro version
 
-- `npm i material-dashboard`
-- Clone the repo: `git clone https://github.com/creativetimofficial/material-dashboard.git`.
-- [Download from Github](https://github.com/creativetimofficial/material-dashboard/archive/master.zip).
-- [Download from Creative Tim](https://www.creative-tim.com/product/material-dashboard).
+ - [Preview](https://berrydashboard.io)
+ - [Purchase from MUI Store](https://material-ui.com/store/items/berry-react-material-admin/)
 
+## Table of contents
+
+ * [Getting Started](#getting-started)
+ * [Documentation](#documentation)
+ * [Technology Stack](#technology-stack)
+ * [Author](#author)
+ * [Issues?](#issues)
+ * [License](#license)
+ * [More Products](#more-free-react-material-admin-templates)
+ * [Follow us](#follow-us)
+ 
+## Getting Started
+
+Clone from Github 
+```
+git clone https://github.com/codedthemes/berry-free-react-admin-template.git
+```
 
 ## Documentation
-The documentation for the Material Dashboard is hosted at our [website](https://demos.creative-tim.com/material-dashboard/docs/2.1/getting-started/introduction.html).
 
+[Berry documentation](https://codedthemes.gitbook.io/berry/) helps you with installation, deployment, and troubleshooting.
 
-## File Structure
-Within the download you'll find the following directories and files:
+## Technology Stack
 
-```
-material-dashboard
-    ├── assets
-    │   ├── css
-    │   ├── fonts
-    │   ├── img
-    │   ├── js
-    │   │   ├── core
-    │   │   ├── plugins
-    │   │   └── material-dashboard.js
-    │   │   └── material-dashboard.js.map
-    │   │   └── material-dashboard.min.js
-    │   └── scss
-    │       ├── material-dashboard
-    │       └── material-dashboard.scss
-    ├── docs
-    │   ├── documentation.html
-    ├── pages
-    ├── CHANGELOG.md
-    ├── gulpfile.js
-    ├── package.json
-```
+ - [Material UI V5](https://material-ui.com/)
+ - Built with React Hooks API
+ - Redux & React Context API for State Management
+ - React Router for Navigation Routing
+ - Support of react-script
+ - Code Splitting
+ - CSS-in-JS where CSS is composed using JavaScript instead of defined in external files
 
+## Author
 
-## Browser Support
+Berry is developed by Team [CodedThemes](https://codedthemes.com).
 
-At present, we officially aim to support the last two versions of the following browsers:
+## Issues
 
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
+To report a bug, please submit an [issue](https://github.com/codedthemes/berry-free-react-admin-template/issues) on Github. We will respond as soon as possible to resolve the issue.
 
+## License
 
+ - Licensed cover under [MIT](https://github.com/codedthemes/datta-able-bootstrap-dashboard/blob/master/LICENSE)
 
-## Resources
-- Demo: <https://demos.creative-tim.com/material-dashboard/pages/dashboard.html>
-- Download Page: <https://www.creative-tim.com/product/material-dashboard>
-- Documentation: <https://demos.creative-tim.com/material-dashboard/docs/2.1/getting-started/introduction.html>
-- License Agreement: <https://www.creative-tim.com/license>
-- PRO Version: <https://www.creative-tim.com/product/material-dashboard-pro>
-- Support: <https://www.creative-tim.com/contact-us>
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/material-dashboard/issues)
-- [Material Kit](https://www.creative-tim.com/product/material-kit?ref=github-md-free) - For Front End Development
+## Berry - Nodejs version by Appseed
 
-## Reporting Issues
+- [Free Nodejs](https://appseed.us/product/react-node-js-berry-dashboard)
+- [Premium Berry Nodejs](https://appseed.us/full-stack/react-berry-dashboard)
 
-We use GitHub Issues as the official bug tracker for the Material Dashboard. Here are some advices for our users that want to report an issue:
+## More Free React Material Admin Templates
 
-1. Make sure that you are using the latest version of the Material Dashboard. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/).
-2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
-3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
+ - [Free Materially](https://codedthemes.com/item/materially-free-reactjs-admin-template/)
+ - [Free Mantis](https://mantisdashboard.io/free/)
 
-## Upgrade to Premium version
+[![IMG_8566.jpg](https://camo.githubusercontent.com/a2364ad8c498b2a7378dae5e1a5eb5d8e1fcb2d6ceeb8b54acdc2e8bc2508775/68747470733a2f2f6d616e74697364617368626f6172642e696f2f6164762d62616e6e65722d696d616765732f6f672d736f6369616c2e706e67)](https://mantisdashboard.io/free/)
 
-Are you looking for more components? Please check our Premium Version of Material Dashboard [here](https://www.creative-tim.com/product/material-dashboard-pro/)
+## More Premium React Material Admin Templates
 
-## Technical Support or Questions
-
-If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us) instead of opening an issue.
-
-
-
-## Licensing
-
-- Copyright 2021 Creative Tim (https://www.creative-tim.com/)
-
-- Licensed under MIT (https://github.com/creativetimofficial/material-dashboard/blob/master/LICENSE.md)
-
-
-
-## Useful Links
-
-- [More products](https://www.creative-tim.com/templates?ref=readme-sudp) from Creative Tim
-- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
-- [Freebies](https://www.creative-tim.com/bootstrap-themes/free?ref=readme-sudp) from Creative Tim
-- [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=readme-sudp) (earn money)
-- [Bundles](https://www.creative-tim.com/bundles)
-- [Material Design](https://www.creative-tim.com/design-system/material)
-- [Get Discount](https://www.creative-tim.com/coupon)
-
-##### Social Media
-
-Twitter: <https://twitter.com/CreativeTim>
-Facebook: <https://www.facebook.com/CreativeTim>
-Dribbble: <https://dribbble.com/creativetim>
-TikTok: <https://tiktok.com/@creative.tim>
-Instagram: <https://instagram.com/creativetimofficial>
+ - [Mantis](https://mui.com/store/items/mantis-react-admin-dashboard-template/)
+ - [Materially](https://codedthemes.com/item/materially-reactjs-admin-dashboard/)
+ 
+## Follow us
+ - [Website](https://berrydashboard.io)
+ - [Blog](https://blog.berrydashboard.io)
+ - [CodedThemes](https://codedthemes.com)
+ - [Dribbble](https://dribbble.com/codedthemes)
+ - [Facebook](https://www.facebook.com/codedthemes)
+ - [Twitter](https://twitter.com/codedthemes)
